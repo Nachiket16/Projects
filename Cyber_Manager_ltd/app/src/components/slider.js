@@ -9,20 +9,17 @@ import "./styles.css"
 
 // import required modules
 import { Navigation } from "swiper";
-
+import SlideCard from './slideCard'
+import img1 from './img.jpg'
+import img2 from './img2.jpg'
+import img3 from './img3.jpg'
 const Slider = () => {
   return (
     <>
     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      <SwiperSlide>Slide 5</SwiperSlide>
-      <SwiperSlide>Slide 6</SwiperSlide>
-      <SwiperSlide>Slide 7</SwiperSlide>
-      <SwiperSlide>Slide 8</SwiperSlide>
-      <SwiperSlide>Slide 9</SwiperSlide>
+      <SwiperSlide> <SlideCard data={{imgSrc: img1}}/> </SwiperSlide>
+      <SwiperSlide> <SlideCard data={{imgSrc: img2}}/>  </SwiperSlide>
+      <SwiperSlide> <SlideCard data={{imgSrc: img3}}/>  </SwiperSlide>
     </Swiper>
   </>
   );
